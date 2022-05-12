@@ -135,5 +135,35 @@ table {
 body {
 	background-color: $bg-color;
 	font-family: $font-family;
-	font-size: 1rem;
+	font-size: $fs-body;
+	// padding: 1em 3em 3em;
+}
+
+h2 {
+	font-size: $fs-h1;
+	margin: 1em 0 1.5em;
+}
+
+p {
+	line-height: 1.5;
+}
+
+h3 {
+	font-size: $fs-h3;
+}
+
+a {
+	color: $black;
+}
+
+input {
+	border: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+button {
+	border: none;
 }
