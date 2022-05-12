@@ -1,0 +1,104 @@
+@use "../abstracts";
+
+.hero {
+	margin: 15px 0;
+
+	.container {
+		height: 80vh;
+		position: relative;
+		display: flex;
+	}
+
+	&__text {
+		font-size: abstracts.$fs-large;
+		text-transform: capitalize;
+		margin-top: 1.5em;
+	}
+	&__images {
+		width: 100%;
+		display: flex;
+		gap: 2em;
+
+		.image {
+			border-radius: abstracts.$radius;
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-end;
+			background-size: cover;
+			padding-bottom: 3em;
+			background-position: center;
+
+			.course {
+				text-transform: capitalize;
+				color: abstracts.$white;
+				font-size: 1.5rem;
+			}
+
+			.topics {
+				p {
+					text-transform: capitalize;
+					color: abstracts.$white;
+					font-size: 2rem;
+					line-height: 1;
+				}
+				.small {
+					font-size: 12px;
+					text-transform: uppercase;
+					text-align: center;
+				}
+			}
+
+			&.horinzontal {
+				.course {
+					text-orientation: upright;
+					writing-mode: horizontal-tb;
+
+					span {
+						display: none;
+					}
+				}
+				.topics {
+					display: none;
+				}
+			}
+		}
+
+		.image:nth-of-type(1) {
+			flex-grow: 3;
+			background-image: url("/src/img/hero-1-female.jpg");
+		}
+		.image:nth-of-type(2) {
+			flex-grow: 1;
+			background-image: url("/src/img/charlie-green-3JmfENcL24M-unsplash.jpg");
+		}
+		.image:nth-of-type(3) {
+			flex-grow: 1;
+			background-image: url("/src/img/hero-2-female.jpg");
+		}
+	}
+	&__form {
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		form {
+			display: flex;
+			width: 400px;
+			background-color: abstracts.$white;
+
+			input {
+				padding: 2em;
+				flex: 1;
+
+				&::placeholder {
+					font-size: abstracts.$fs-body;
+				}
+			}
+			button {
+				padding: 2em;
+				background-color: abstracts.$green;
+				font-size: abstracts.$fs-body;
+				text-transform: capitalize;
+			}
+		}
+	}
+}

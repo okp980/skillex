@@ -1,0 +1,42 @@
+@use "../abstracts";
+.categories {
+	margin: 5em 0;
+	&__heading {
+		text-align: center;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 4em;
+
+		.item:not(:last-of-type) {
+			margin-right: 2em;
+			text-transform: capitalize;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -10px;
+				height: 0px;
+				background-color: black;
+			}
+
+			&.active {
+				&::after {
+					height: 3px;
+				}
+			}
+		}
+	}
+
+	&__cards {
+		margin: 2.5em auto;
+		max-width: 1100px;
+		display: flex;
+		justify-content: center;
+	}
+}

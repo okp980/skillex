@@ -1,4 +1,54 @@
+@use "../abstracts";
+
 .header {
-	display: flex;
-	justify-content: space-between;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 80px;
+	}
+
+	&__logo {
+		font-size: abstracts.$fs-h1;
+		text-decoration: none;
+		color: abstracts.$black;
+		font-weight: abstracts.$fw-bold;
+		text-transform: capitalize;
+	}
+	&__nav {
+		flex: 1;
+		.menu {
+			display: flex;
+			justify-content: flex-start;
+			margin-left: 7em;
+
+			li {
+				a {
+					text-transform: capitalize;
+					text-decoration: none;
+					color: abstracts.$gray;
+				}
+			}
+
+			li:not(:last-of-type) {
+				margin-right: 3em;
+			}
+		}
+	}
+	&__user {
+		a {
+			text-decoration: none;
+			text-transform: capitalize;
+		}
+		.log-in {
+			margin-right: 2em;
+		}
+
+		.free-trial {
+			background-color: abstracts.$black;
+			color: abstracts.$white;
+			padding: 0.5em 2em;
+			border-radius: abstracts.$radius;
+		}
+	}
 }

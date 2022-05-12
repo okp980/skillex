@@ -7,6 +7,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link
 			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
 			type="text/css"
 			media="screen"
 			href="scss/main.scss"
@@ -16,20 +23,334 @@
 	<body>
 		<!-- header -->
 		<header class="header">
-			<a href="/" class="header__logo">skillex</a>
-			<nav class="header__nav">
-				<ul class="header__menu">
-					<li>find passion</li>
-					<li>categories</li>
-					<li>skills</li>
-					<li>customer</li>
-				</ul>
-			</nav>
-			<div class="header__user">
-				<a href="">log in</a>
-				<a href="">free trial</a>
+			<div class="container">
+				<a href="/" class="header__logo">skillex.</a>
+				<nav class="header__nav">
+					<ul class="menu">
+						<li><a href="#">find passion</a></li>
+						<li><a href="#">categories</a></li>
+						<li><a href="#">skills</a></li>
+						<li><a href="#">customer</a></li>
+					</ul>
+				</nav>
+				<div class="header__user">
+					<a href="#" class="log-in">log in</a>
+					<a href="#" class="free-trial">free trial</a>
+				</div>
 			</div>
 		</header>
 		<!-- header -->
+
+		<!-- hero -->
+		<section class="hero">
+			<div class="container">
+				<div class="hero__text">
+					<h1>
+						watch. <br />
+						learn. <br />
+						grow. <br />
+					</h1>
+				</div>
+				<div class="hero__images">
+					<div class="image">
+						<div class="course">writing <br /><span>course</span></div>
+						<div class="topics">
+							<p>100</p>
+							<p class="small">topics</p>
+						</div>
+					</div>
+					<div class="image horinzontal">
+						<div class="course">writing <br /><span>course</span></div>
+						<div class="topics">
+							<p>100</p>
+							<p class="small">topics</p>
+						</div>
+					</div>
+					<div class="image horinzontal">
+						<div class="course">bussiness <br /><span>course</span></div>
+						<div class="topics">
+							<p>100</p>
+							<p class="small">topics</p>
+						</div>
+					</div>
+				</div>
+				<div class="hero__form">
+					<form action="">
+						<input type="text" placeholder="Find your passsion" />
+						<button type="submit">go</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- hero -->
+		<!-- categories -->
+		<section class="categories">
+			<div class="container">
+				<h2 class="categories__heading">
+					Unlimited access to 100+ instructors.
+				</h2>
+				<ul class="categories__menu">
+					<li class="item active">all categories</li>
+					<li class="item">entertainment</li>
+					<li class="item">lifestyle</li>
+					<li class="item">writing</li>
+					<li class="item">bussiness</li>
+					<li class="item">food</li>
+				</ul>
+				<ul class="categories__cards">
+					<li class="card">
+						<div class="image">
+							<img
+								src="/src/img/annie-spratt-fbAnIjhrOL4-unsplash.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="description">
+							<div class="title">
+								<h3>sales marketing</h3>
+								<p>4 months</p>
+							</div>
+						</div>
+					</li>
+					<li class="card">
+						<div class="image">
+							<img src="/src/img/mae-mu-Rz5o0osnN6Q-unsplash.jpg" alt="" />
+						</div>
+						<div class="description">
+							<div class="title">
+								<h3>data analytics</h3>
+								<p>3 months</p>
+							</div>
+						</div>
+					</li>
+					<li class="card">
+						<div class="image">
+							<img src="/src/img/patrick-OIFgeLnjwrM-unsplash.jpg" alt="" />
+						</div>
+						<div class="description">
+							<div class="title">
+								<h3>copy writing pro</h3>
+								<p>2 months</p>
+							</div>
+						</div>
+					</li>
+					<li class="card">
+						<div class="image">
+							<img
+								src="/src/img/ruslan-bardash-4kTbAMRAHtQ-unsplash.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="description">
+							<div class="title">
+								<h3>design art</h3>
+								<p>4 months</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- categories -->
+		<!-- skills -->
+		<section class="skills">
+			<div class="container">
+				<div class="skills__heading">
+					<h3>Get the skills you need for a job that is in demand.</h3>
+					<p>
+						The modern labor market dictates its own terms. Today, to be a
+						competitive specialist requires more than professional skills
+					</p>
+					<div class="green-card">
+						<div class="count-info">
+							<div class="count">10</div>
+							<div class="text">years experience</div>
+						</div>
+						<div class="count-info">
+							<div class="count">250</div>
+							<div class="text">types of courses</div>
+						</div>
+					</div>
+				</div>
+				<div class="skills__description">
+					<ul class="skill-list">
+						<li>
+							<h4>leadership</h4>
+							<p>Fully committed to the success company.</p>
+						</li>
+						<li>
+							<h4>responsibility</h4>
+							<p>Employess will always be my top priority.</p>
+						</li>
+						<li>
+							<h4>flexibility</h4>
+							<p>The ability to switch is an important skill.</p>
+						</li>
+					</ul>
+					<div class="skill-video">
+						<video controls src="/src/video/video.mp4"></video>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- skills -->
+		<!-- customer -->
+		<section class="customer">
+			<div class="container">
+				<h2 class="customer__heading">What our customer say.</h2>
+
+				<ul class="customer__cards">
+					<!-- card -->
+					<li class="card">
+						<div class="card__description">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								beatae ex culpa expedita, ab facere repellendus voluptas.
+							</p>
+						</div>
+						<div class="card__footer">
+							<div class="profle-image"></div>
+							<div class="profile-details">
+								<p class="full-name">Rob Zuber</p>
+								<p class="position">IT Manager</p>
+							</div>
+						</div>
+					</li>
+					<!-- card -->
+					<!-- card -->
+					<li class="card">
+						<div class="card__description">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								beatae ex culpa expedita, ab facere repellendus voluptas.
+							</p>
+						</div>
+						<div class="card__footer">
+							<div class="profle-image"></div>
+							<div class="profile-details">
+								<p class="full-name">Rob Zuber</p>
+								<p class="position">IT Manager</p>
+							</div>
+						</div>
+					</li>
+					<!-- card -->
+					<!-- card -->
+					<li class="card">
+						<div class="card__description">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								beatae ex culpa expedita, ab facere repellendus voluptas.
+							</p>
+						</div>
+						<div class="card__footer">
+							<div class="profle-image"></div>
+							<div class="profile-details">
+								<p class="full-name">Rob Zuber</p>
+								<p class="position">IT Manager</p>
+							</div>
+						</div>
+					</li>
+					<!-- card -->
+					<!-- card -->
+					<li class="card">
+						<div class="card__description">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								beatae ex culpa expedita, ab facere repellendus voluptas.
+							</p>
+						</div>
+						<div class="card__footer">
+							<div class="profle-image"></div>
+							<div class="profile-details">
+								<p class="full-name">Rob Zuber</p>
+								<p class="position">IT Manager</p>
+							</div>
+						</div>
+					</li>
+					<!-- card -->
+					<!-- card -->
+					<li class="card">
+						<div class="card__description">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								beatae ex culpa expedita, ab facere repellendus voluptas.
+							</p>
+						</div>
+						<div class="card__footer">
+							<div class="profle-image"></div>
+							<div class="profile-details">
+								<p class="full-name">Rob Zuber</p>
+								<p class="position">IT Manager</p>
+							</div>
+						</div>
+					</li>
+					<!-- card -->
+					<!-- card -->
+					<li class="card">
+						<div class="card__description">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+								beatae ex culpa expedita, ab facere repellendus voluptas.
+							</p>
+						</div>
+						<div class="card__footer">
+							<div class="profle-image"></div>
+							<div class="profile-details">
+								<p class="full-name">Rob Zuber</p>
+								<p class="position">IT Manager</p>
+							</div>
+						</div>
+					</li>
+					<!-- card -->
+				</ul>
+
+				<div class="customer__controls">
+					<button><i class="fa-solid fa-arrow-left"></i></button>
+					<button><i class="fa-solid fa-arrow-right"></i></button>
+				</div>
+			</div>
+		</section>
+		<!-- customer -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<a href="/" class="logo">Skillex.</a>
+					<div class="links">
+						<div class="left">
+							<a href="#find-passion">Find passion</a>
+							<a href="#skills">Skills</a>
+						</div>
+						<div class="right">
+							<a href="#categories">Categories</a>
+							<a href="#customer">Customer</a>
+						</div>
+					</div>
+					<div class="community">
+						<h4>Join our community</h4>
+						<form action="">
+							<input type="email" placeholder="Enter your email" />
+							<button>Go</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="footer__bottom">
+					<div class="right">
+						<div class="icon"></div>
+						<p>2021 Halo Lab. All rights reserved.</p>
+					</div>
+					<div class="left">
+						<i class="fa-brands fa-facebook-f"></i>
+						<i class="fa-brands fa-behance"></i>
+						<i class="fa-brands fa-linkedin-in"></i>
+						<i class="fa-brands fa-instagram"></i>
+						<i class="fa-brands fa-dribbble"></i>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer -->
 	</body>
 </html>
