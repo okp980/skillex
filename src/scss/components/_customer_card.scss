@@ -1,0 +1,35 @@
+@use "../abstracts";
+
+.customer__cards {
+	.card {
+		width: 300px;
+		background-color: abstracts.$white;
+		padding: 2em;
+		border-radius: abstracts.$radius;
+
+		&__description {
+		}
+		&__footer {
+			display: flex;
+
+			align-items: center;
+			padding: 1.5em 0 1em;
+
+			.profle-image {
+				height: 60px;
+				width: 60px;
+				border-radius: 50%;
+				margin-right: 0.3em;
+			}
+			.profile-details {
+				.full-name {
+					font-weight: abstracts.$fw-bold;
+				}
+				.position {
+					color: abstracts.$gray;
+					font-size: 0.85rem;
+				}
+			}
+		}
+	}
+}

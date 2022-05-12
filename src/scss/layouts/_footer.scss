@@ -1,0 +1,92 @@
+@use "../abstracts";
+.footer {
+	background-color: abstracts.$white;
+	margin-top: 3em;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		padding: 3em 0;
+
+		.logo {
+			font-size: abstracts.$fs-h1;
+			text-decoration: none;
+			color: abstracts.$black;
+			font-weight: abstracts.$fw-bold;
+			text-transform: capitalize;
+		}
+
+		.links {
+			display: flex;
+			.left {
+				margin-right: 4em;
+				a {
+					margin-bottom: 3em;
+					display: block;
+					text-decoration: none;
+				}
+			}
+			.right {
+				a {
+					margin-bottom: 3em;
+					display: block;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.community {
+			h4 {
+				font-weight: abstracts.$fw-bold;
+				font-size: 20px;
+			}
+			form {
+				display: flex;
+				width: 400px;
+				background-color: abstracts.$white;
+				padding: 0.5em 0;
+
+				input {
+					padding: 1.2em;
+					flex: 1;
+					border: 1px solid abstracts.$gray;
+
+					&::placeholder {
+						font-size: abstracts.$fs-body;
+					}
+				}
+				button {
+					padding: 1.2em;
+					background-color: abstracts.$green;
+					font-size: abstracts.$fs-body;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		padding: 2em 0;
+
+		.right {
+			display: flex;
+			align-items: center;
+			.icon {
+				height: 30px;
+				width: 30px;
+				border-radius: 50%;
+				background-color: abstracts.$black;
+				margin-right: 1em;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+
+		.left {
+			display: flex;
+			gap: 2.5em;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@use "../abstracts";
+.customer {
+	&__heading {
+		text-align: center;
+		margin: 2em 0;
+	}
+
+	&__cards {
+		display: flex;
+		overflow: hidden;
+		gap: 1.5em;
+	}
+	&__controls {
+		display: flex;
+		justify-content: center;
+		margin: 2.5em 0 0;
+
+		button {
+			background: none;
+			cursor: pointer;
+			.fa-solid {
+				font-size: 2em;
+				color: abstracts.$gray;
+			}
+
+			&:not(:last-of-type) {
+				margin-right: 2em;
+			}
+		}
+	}
+}
